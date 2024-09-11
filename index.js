@@ -13,11 +13,11 @@ const port = 3000;
 
 app.get('/', (_req, res) => {
   res.send('Hello in Express World!');
-  console.error("some error 122###############");
-  process.stdout.write("FIND-IT-TEST process stdout")
-  process.stderr.write("FIND-IT-TEST process error")
-  console.log("FIND-IT-TEST console log")
-  console.error("FIND-IT-TEST console error")
+  console.error("new deployment");
+  process.stdout.write("new deployment process stdout")
+  process.stderr.write("new deployment process error")
+  console.log("new deployment console log")
+  console.error("new deployment console error")
 });
 
 app.use('/proxy', proxy);
