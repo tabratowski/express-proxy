@@ -24,4 +24,9 @@ app.use('/proxy', proxy);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
+  console.error("new deployment");
+  process.stdout.write("new deployment process stdout")
+  process.stderr.write("new deployment process error")
+  console.log("new deployment console log")
+  console.error("new deployment console error")
 });
