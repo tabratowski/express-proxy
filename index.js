@@ -20,6 +20,20 @@ app.get('/', (_req, res) => {
   console.error("new deployment console error")
 });
 
+
+app.get('/info', (_req, res) => {
+  res.send('Hello in Express World!');
+  process.stdout.write("new deployment process stdout")
+  console.log("new deployment console log")
+});
+
+
+app.get('/error', (_req, res) => {
+  console.error("new deployment err");
+  process.stderr.write("new deployment process error")
+  console.error("new deployment console error")
+});
+
 app.use('/proxy', proxy);
 
 app.listen(port, () => {
