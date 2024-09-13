@@ -32,6 +32,7 @@ app.get('/error', (_req, res) => {
   console.error("new deployment err");
   process.stderr.write("new deployment process error")
   console.error("new deployment console error")
+  res.send('err Hello in Express World!');
 });
 
 app.use('/proxy', proxy);
