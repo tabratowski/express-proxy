@@ -29,7 +29,7 @@ app.get('/info', (_req, res) => {
 
 
 app.get('/error', (_req, res) => {
-  console.error("new deployment err");
+  console.error("new deployment errrrr");
   process.stderr.write("new deployment process error")
   console.error("new deployment console error")
   res.send('err Hello in Express World!');
